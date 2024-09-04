@@ -29,7 +29,7 @@ const Weather = () => {
             <div className="bg-green-400 rounded-md p-10 flex flex-col gap-3">
                 <h1 className="text-black font-bold">Weather Report</h1>
                 <p>I can give you a weather report about your city!</p>
-                <input onChange={handleCity} value={city} type="text" name="" id="" className="rounded border border-solid border-black p-2 outline-0" />
+                <input placeholder="Enter the city name" onChange={handleCity} value={city} type="text" name="" id="" className="rounded border border-solid border-black p-2 outline-0" />
                 <input type="button" onClick={getCityDetails} value="Get Report" className="bg-black rounded text-white p-2" />
                 <p><strong>Weather:</strong>{weather}</p>
                 <p><strong>Temperature:</strong>{temprature}</p>
